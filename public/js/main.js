@@ -28,7 +28,7 @@ function getParameterByName(name, url) {
          fetch(request)
             .then(response => {
                if (response.status == 204) {
-                  window.location.replace(`adm.html`);
+                  window.location.replace(`admin.html`);
                } else {
                   throw new Error('Produkt blev ikke slettet');
                }
@@ -75,7 +75,7 @@ function getParameterByName(name, url) {
                   <br>
       
                   <button class="gem">Gem</button>
-                  <a href="adm.html" class="button">Annuller</a> <span id="productsFormError" class="error"></span>
+                  <a href="admin.html" class="button">Annuller</a> <span id="productsFormError" class="error"></span>
                   <hr>`;
    
                let productFormButton = document.querySelector("#productForm button");
@@ -117,7 +117,7 @@ function getParameterByName(name, url) {
                         .then(response => {
    
                            if (response.status == 200) {
-                              window.location.replace(`adm.html`);
+                              window.location.replace(`admin.html`);
                            } else {
                               throw new Error('Produkt blev ikke opdateret')
                            }
@@ -156,7 +156,7 @@ function getParameterByName(name, url) {
             
             
             <button class="gem">Gem</button>
-            <a href="adm.html" class="button">Annuller</a> <span id="productsFormError" class="error"></span>
+            <a href="admin.html" class="button">Annuller</a> <span id="productsFormError" class="error"></span>
             <hr>`;
    
    
@@ -196,7 +196,7 @@ function getParameterByName(name, url) {
                   .then(response => {
                      // hvis gem handlingen gik fejlfrit igennem, reloades siden
                      if (response.status == 200) {
-                        window.location.replace(`adm.html`);
+                        window.location.replace(`admin.html`);
                      } else {
                         throw new Error('Produkt blev ikke oprettet');
                      }
