@@ -93,7 +93,7 @@ function getParameterByName(name, url) {
                   if (id != 0 && name != '' && description != '' && !isNaN(price) && id > 0) {
                      document.querySelector('#productsFormError').innerHTML = "";
                      let url = `http://188.226.173.183:1337/products/${id}`;
-                     let headers = new Headers( ;
+                     let headers = new Headers(
                      headers.append('Content-Type', 'application/json');
    
                      let init = {
