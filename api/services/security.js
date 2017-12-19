@@ -32,7 +32,7 @@ module.exports = {
                         db.execute('DELETE FROM accesstokens WHERE token = ?', [rows[0].idaccesstokens], (error) => {
                             return res.send(401);
                         });
-                    } else {
+                    } else {    
                         return next();
                     }
                 }
