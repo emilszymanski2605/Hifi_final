@@ -94,7 +94,7 @@ function getParameterByName(name, url) {
                      document.querySelector('#productsFormError').innerHTML = "";
                      let url = `http://188.226.173.183:1337/products/${id}`;
                      let headers = new Headers(
-                     headers.append('Content-Type', 'application/json');
+                     headers.append('Content-Type', 'application/json'));
    
                      let init = {
                         method: 'put',
